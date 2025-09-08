@@ -1,16 +1,15 @@
 import express from "express";
 import { usermodel } from "./db";
-
+import mainroute from "./routes";
+import userRouter from "./routes/user";
+import cors from "cors"
 const app  = express();
 app.use(express.json());
+app.use(cors());
 
-app.post("/api/signup", (req,res)=>{
 
-const {email, password} = req.body;
 
-const user = usermodel.create({
-    email,
-    password
-})
+app.use("/api/v1", mainroute)
 
-})
+
+app.listen(3000);

@@ -1,26 +1,92 @@
 import mongoose from "mongoose";
 export declare const usermodel: mongoose.Model<{
-    username?: string | null;
-    password?: string | null;
+    firstname: string;
+    lastname: string;
+    email: string;
+    password: string;
+    userId?: {
+        prototype?: mongoose.Types.ObjectId | null;
+        cacheHexString?: unknown;
+        generate?: {} | null;
+        createFromTime?: {} | null;
+        createFromHexString?: {} | null;
+        createFromBase64?: {} | null;
+        isValid?: {} | null;
+    } | null;
 }, {}, {}, {}, mongoose.Document<unknown, {}, {
-    username?: string | null;
-    password?: string | null;
+    firstname: string;
+    lastname: string;
+    email: string;
+    password: string;
+    userId?: {
+        prototype?: mongoose.Types.ObjectId | null;
+        cacheHexString?: unknown;
+        generate?: {} | null;
+        createFromTime?: {} | null;
+        createFromHexString?: {} | null;
+        createFromBase64?: {} | null;
+        isValid?: {} | null;
+    } | null;
 }, {}, mongoose.DefaultSchemaOptions> & {
-    username?: string | null;
-    password?: string | null;
+    firstname: string;
+    lastname: string;
+    email: string;
+    password: string;
+    userId?: {
+        prototype?: mongoose.Types.ObjectId | null;
+        cacheHexString?: unknown;
+        generate?: {} | null;
+        createFromTime?: {} | null;
+        createFromHexString?: {} | null;
+        createFromBase64?: {} | null;
+        isValid?: {} | null;
+    } | null;
 } & {
     _id: mongoose.Types.ObjectId;
 } & {
     __v: number;
 }, mongoose.Schema<any, mongoose.Model<any, any, any, any, any, any>, {}, {}, {}, {}, mongoose.DefaultSchemaOptions, {
-    username?: string | null;
-    password?: string | null;
+    firstname: string;
+    lastname: string;
+    email: string;
+    password: string;
+    userId?: {
+        prototype?: mongoose.Types.ObjectId | null;
+        cacheHexString?: unknown;
+        generate?: {} | null;
+        createFromTime?: {} | null;
+        createFromHexString?: {} | null;
+        createFromBase64?: {} | null;
+        isValid?: {} | null;
+    } | null;
 }, mongoose.Document<unknown, {}, mongoose.FlatRecord<{
-    username?: string | null;
-    password?: string | null;
+    firstname: string;
+    lastname: string;
+    email: string;
+    password: string;
+    userId?: {
+        prototype?: mongoose.Types.ObjectId | null;
+        cacheHexString?: unknown;
+        generate?: {} | null;
+        createFromTime?: {} | null;
+        createFromHexString?: {} | null;
+        createFromBase64?: {} | null;
+        isValid?: {} | null;
+    } | null;
 }>, {}, mongoose.ResolveSchemaOptions<mongoose.DefaultSchemaOptions>> & mongoose.FlatRecord<{
-    username?: string | null;
-    password?: string | null;
+    firstname: string;
+    lastname: string;
+    email: string;
+    password: string;
+    userId?: {
+        prototype?: mongoose.Types.ObjectId | null;
+        cacheHexString?: unknown;
+        generate?: {} | null;
+        createFromTime?: {} | null;
+        createFromHexString?: {} | null;
+        createFromBase64?: {} | null;
+        isValid?: {} | null;
+    } | null;
 }> & {
     _id: mongoose.Types.ObjectId;
 } & {

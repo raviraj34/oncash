@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
-
 mongoose.connect("");
 
 const schema = mongoose.Schema;
-
+const ObjectId = mongoose.Types.ObjectId;
 const userschema  = new schema ({
     firstname: {
         type: String,
@@ -20,7 +19,8 @@ const userschema  = new schema ({
     password: {
         type: String,
         required: true
-    }
+    },
+    userId:ObjectId
 })
 
 
